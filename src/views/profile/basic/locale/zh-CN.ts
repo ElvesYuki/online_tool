@@ -1,4 +1,6 @@
 export default {
+  'menu.tool.aiConfig': '算法配置',
+  'menu.tool.ticketGenerator': '准考证生成',
   'menu.profile.basic': '基础详情页',
   'basicProfile.title.form': '参数审批流程表',
   'basicProfile.steps.commit': '提交修改',

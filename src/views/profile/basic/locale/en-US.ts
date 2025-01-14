@@ -1,4 +1,6 @@
 export default {
+  'menu.tool.aiConfig': '算法配置',
+  'menu.tool.ticketGenerator': '准考证生成',
   'menu.profile.basic': 'Basic Profile',
   'basicProfile.title.form': 'Parameter Approval Process Table',
   'basicProfile.steps.commit': 'Commit',
