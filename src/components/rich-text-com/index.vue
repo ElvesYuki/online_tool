@@ -231,7 +231,7 @@
     </div>
     <editor-content
       :editor="editor"
-      style="min-height: 200px"
+      style="height: 1485px; width: 1050px"
       @click="editor.chain().focus()"
     />
   </div>
