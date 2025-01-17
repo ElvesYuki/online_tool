@@ -1,5 +1,4 @@
 <template>
-  <div>富文本</div>
   <div class="editorBox">
     <div v-if="editor">
       <div v-if="editable" class="editorTop">
@@ -231,7 +230,7 @@
     </div>
     <editor-content
       :editor="editor"
-      style="height: 1485px; width: 1050px"
+      :style="{ height: height, width: width }"
       @click="editor.chain().focus()"
     />
   </div>
@@ -255,6 +254,18 @@
   import { TableCell } from '@tiptap/extension-table-cell';
   // import ListItem from '@tiptap/extension-list-item';
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const props = defineProps({
+    width: {
+      type: String,
+      default: '210mm',
+    },
+    height: {
+      type: String,
+      default: '297mm',
+    },
+  });
+
   // 创建编辑器实例
   const editor = useEditor({
     extensions: [
@@ -274,6 +285,10 @@
       CharacterCount.configure({}),
       Table.configure({
         resizable: true,
+        HTMLAttributes: {
+          style:
+            'border-collapse: collapse;border-spacing: 0;border: 1px solid #000000;',
+        },
       }),
       TableRow,
       TableHeader,

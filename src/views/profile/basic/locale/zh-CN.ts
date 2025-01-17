@@ -1,4 +1,5 @@
 export default {
+  'menu.tool': '在线工具',
   'menu.tool.aiConfig': '算法配置',
   'menu.tool.ticketGenerator': '准考证生成',
   'menu.profile.basic': '基础详情页',

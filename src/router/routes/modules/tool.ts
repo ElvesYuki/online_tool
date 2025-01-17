@@ -6,7 +6,7 @@ const TOOL: AppRouteRecordRaw = {
   name: 'tool',
   component: DEFAULT_LAYOUT,
   meta: {
-    locale: '在线工具',
+    locale: 'menu.tool',
     requiresAuth: false,
     icon: 'icon-list',
     order: 4,
